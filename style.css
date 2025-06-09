@@ -1,0 +1,151 @@
+/* style.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column; /* 要素を縦に並べる */
+    justify-content: center; /* 垂直方向中央寄せ */
+    align-items: center; /* 水平方向中央寄せ */
+    min-height: 100vh; /* 画面全体の高さ */
+    margin: 0;
+    background: linear-gradient(135deg, #f0e68c, #add8e6); /* 落ち着いたグラデーション */
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.95); /* 半透明の白背景 */
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    padding: 30px;
+    max-width: 500px;
+    width: 90%; /* レスポンシブ対応 */
+    animation: fadeIn 1s ease-out; /* フェードインアニメーション */
+    margin-bottom: 20px; /* おみくじボタンとの間にスペース */
+}
+
+h1 {
+    color: #4CAF50; /* 緑系のアクセントカラー */
+    margin-bottom: 20px;
+    font-size: 2.2em; /* タイトルを大きめに */
+}
+
+h2 {
+    color: #3F51B5; /* 青系のアクセントカラー */
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.current-date {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.omikuji-button {
+    background-color: #2196F3; /* 青系のボタンカラー */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px; /* 角丸ボタン */
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* ホバー時のアニメーション */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 10px; /* ボタンとコンテンツの間にスペース */
+}
+
+.omikuji-button:hover {
+    background-color: #1976D2; /* ホバー時の色 */
+}
+
+.omikuji-button:active, .change-button:active {
+    transform: translateY(2px); /* クリック時の押し込み感 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.omikuji-display {
+    margin-top: 30px;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.omikuji-result {
+    font-size: 1.8em; /* ちょっと大きめに */
+    font-weight: bold;
+    color: #E91E63; /* ピンク系のアクセントカラー */
+    margin-bottom: 15px;
+}
+
+.omikuji-detail {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.detail-container {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    padding: 30px;
+    max-width: 500px;
+    width: 90%;
+    animation: fadeIn 1s ease-out;
+    margin-top: 20px; /* 上のコンテナとの間にスペース */
+}
+
+.detail-section {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #ddd; /* 点線で区切り */
+}
+
+.detail-section:last-child {
+    border-bottom: none; /* 最後は区切りなし */
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.detail-section h3 {
+    color: #673AB7; /* 紫系のアクセントカラー */
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.detail-section p {
+    font-size: 1.0em;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.change-button {
+    background-color: #FFC107; /* 黄色系のボタンカラー */
+    color: #333;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.change-button:hover {
+    background-color: #FFB300; /* ホバー時の色 */
+}
+
+/* アニメーション */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
