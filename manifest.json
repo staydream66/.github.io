@@ -1,7 +1,7 @@
 {
-  "name": "わがやのトゥデイ・パキーン占い",
+  "name": "トゥデイ・パキーン占い",
   "short_name": "パキーン占い",
-  "description": "毎日楽しめる！わがやのトゥデイ・パキーン占いアプリ。",
+  "description": "毎日楽しめる！トゥデイ・パキーン占い",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#add8e6",
