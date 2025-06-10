@@ -1,83 +1,86 @@
 /* style.css */
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Noto Sans JP', sans-serif; /* 日本語に合うフォント */
     display: flex;
-    flex-direction: column; /* 要素を縦に並べる */
-    justify-content: center; /* 垂直方向中央寄せ */
-    align-items: center; /* 水平方向中央寄せ */
-    min-height: 100vh; /* 画面全体の高さ */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     margin: 0;
-    background: linear-gradient(135deg, #f0e68c, #add8e6); /* 落ち着いたグラデーション */
+    background: linear-gradient(135deg, #f0f0f0, #e0e0e0); /* 淡い背景色 */
     color: #333;
     text-align: center;
     padding: 20px;
     box-sizing: border-box;
-    line-height: 1.6;
+    line-height: 1.8; /* 行間を広めに */
 }
 
 .container {
-    background-color: rgba(255, 255, 255, 0.95); /* 半透明の白背景 */
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     padding: 30px;
     max-width: 500px;
-    width: 90%; /* レスポンシブ対応 */
-    animation: fadeIn 1s ease-out; /* フェードインアニメーション */
-    margin-bottom: 20px; /* おみくじボタンとの間にスペース */
+    width: 90%;
+    animation: fadeIn 1s ease-out;
+    margin-bottom: 20px;
+    border: 2px solid #d8b384; /* 枠線を追加 */
 }
 
 h1 {
-    color: #4CAF50; /* 緑系のアクセントカラー */
+    color: #c56a5d; /* 少し落ち着いた赤 */
     margin-bottom: 20px;
-    font-size: 2.2em; /* タイトルを大きめに */
+    font-size: 2.4em;
+    font-weight: 600; /* 少し太く */
 }
 
 h2 {
-    color: #3F51B5; /* 青系のアクセントカラー */
+    color: #43a047; /* 深い緑 */
     margin-top: 30px;
     margin-bottom: 20px;
     font-size: 1.8em;
+    font-weight: 500;
 }
 
 .current-date {
     font-size: 1.1em;
-    color: #666;
+    color: #777;
     margin-bottom: 20px;
 }
 
 .omikuji-button {
-    background-color: #2196F3; /* 青系のボタンカラー */
+    background-color: #a1887f; /* 茶色系のボタンカラー */
     color: white;
     padding: 12px 25px;
     border: none;
-    border-radius: 25px; /* 角丸ボタン */
+    border-radius: 25px;
     font-size: 1.2em;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* ホバー時のアニメーション */
+    transition: background-color 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 10px; /* ボタンとコンテンツの間にスペース */
+    margin-top: 10px;
 }
 
 .omikuji-button:hover {
-    background-color: #1976D2; /* ホバー時の色 */
+    background-color: #795548; /* ホバー時の色 */
 }
 
 .omikuji-button:active, .change-button:active {
-    transform: translateY(2px); /* クリック時の押し込み感 */
+    transform: translateY(2px);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .omikuji-display {
     margin-top: 30px;
-    border-top: 1px solid #eee;
+    border-top: 2px solid #d8b384; /* 区切り線 */
     padding-top: 20px;
 }
 
 .omikuji-result {
-    font-size: 1.8em; /* ちょっと大きめに */
+    font-size: 2.0em; /* 大きく */
     font-weight: bold;
-    color: #E91E63; /* ピンク系のアクセントカラー */
+    color: #e64a19; /* オレンジ系のアクセントカラー */
     margin-bottom: 15px;
 }
 
@@ -88,32 +91,34 @@ h2 {
 }
 
 .detail-container {
-    background-color: rgba(255, 255, 255, 0.95);
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     padding: 30px;
     max-width: 500px;
     width: 90%;
     animation: fadeIn 1s ease-out;
-    margin-top: 20px; /* 上のコンテナとの間にスペース */
+    margin-top: 20px;
+    border: 2px solid #d8b384; /* 枠線を追加 */
 }
 
 .detail-section {
     margin-bottom: 25px;
     padding-bottom: 15px;
-    border-bottom: 1px dashed #ddd; /* 点線で区切り */
+    border-bottom: 1px dashed #bbb; /* 点線で区切り */
 }
 
 .detail-section:last-child {
-    border-bottom: none; /* 最後は区切りなし */
+    border-bottom: none;
     margin-bottom: 0;
     padding-bottom: 0;
 }
 
 .detail-section h3 {
-    color: #673AB7; /* 紫系のアクセントカラー */
+    color: #7b1fa2; /* 紫系のアクセントカラー */
     font-size: 1.4em;
     margin-bottom: 10px;
+    font-weight: 500;
 }
 
 .detail-section p {
@@ -123,7 +128,7 @@ h2 {
 }
 
 .change-button {
-    background-color: #FFC107; /* 黄色系のボタンカラー */
+    background-color: #fdd835; /* 黄色系のボタンカラー */
     color: #333;
     padding: 8px 15px;
     border: none;
@@ -135,7 +140,7 @@ h2 {
 }
 
 .change-button:hover {
-    background-color: #FFB300; /* ホバー時の色 */
+    background-color: #fbc02d; /* ホバー時の色 */
 }
 
 /* アニメーション */
